@@ -12,7 +12,9 @@ export const counterSlice = createSlice({
             event.count +=1
         },
         decrement: (event) =>{
+            if (event.count >0){
             event.count -=1
+            }
         },
         reset: (event) =>{
             event.count = 0
